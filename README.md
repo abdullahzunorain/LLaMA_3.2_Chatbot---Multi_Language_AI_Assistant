@@ -44,7 +44,7 @@ ollama pull llama3.2
 
 ### Step 5: Run the FastAPI Backend
 ```bash
-uvicorn app:app --host 0.0.0.0 --port 8000 --reload
+uvicorn api:app --reload
 ```
 This will start the FastAPI server at `http://localhost:8000`.
 
