@@ -50,7 +50,7 @@ This will start the FastAPI server at `http://localhost:8000`.
 
 ### Step 6: Run the Streamlit Frontend
 ```bash
-streamlit run chat.py
+streamlit run app.py
 ```
 This will launch the chat interface in your browser.
 
