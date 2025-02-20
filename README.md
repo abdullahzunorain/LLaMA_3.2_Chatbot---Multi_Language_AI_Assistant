@@ -1,6 +1,6 @@
 # LLaMA-3.2 Chatbot Multi-Language-AI-Assistant
 
-## Chatbot GUI Screenshot
+### Chatbot GUI 
 
 ![Chatbot GUI](Screenshot%20of%20the%20Chatbot%20GUI.jpg)
 
