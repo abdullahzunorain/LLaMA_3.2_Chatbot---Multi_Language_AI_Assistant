@@ -1,5 +1,9 @@
 # LLaMA-3.2 Chatbot Multi-Language-AI-Assistant
 
+## Chatbot GUI Screenshot
+
+![Chatbot GUI](Screenshot%20of%20the%20Chatbot%20GUI.jpg)
+
 
 ## Overview
 This project is a locally hosted chatbot that utilizes the **Llama 3.2 model from Ollama**. The backend is powered by **FastAPI**, handling chat requests and processing responses, while the frontend is built using **Streamlit** for an interactive user experience.
