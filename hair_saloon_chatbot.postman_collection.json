@@ -1,0 +1,808 @@
+{
+	"info": {
+		"_postman_id": "c28f97ec-29f1-4a53-8e3b-6dc90a5c31fc",
+		"name": "hair_saloon_chatbot",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42420048",
+		"_collection_link": "https://localteam-8132.postman.co/workspace/local_team-Workspace~6779c4aa-a816-4a18-8bc9-acd101419380/collection/42420048-c28f97ec-29f1-4a53-8e3b-6dc90a5c31fc?action=share&source=collection_link&creator=42420048"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/chat",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"conversation_id\": \"12345\",\r\n  \"messages\": [\r\n    {\"role\": \"user\", \"content\": \"Hello, How are you!\"}\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/chat",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"chat"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:8000/chat",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"conversation_id\": \"12345\",\r\n  \"messages\": [{\"role\": \"user\", \"content\": \"Hello, How are you!\"}]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/chat",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"chat"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Wed, 19 Feb 2025 18:32:59 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "254"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"response\": \"I'm doing great, thank you for asking! We're pretty busy today at the saloon, but I'd be happy to help you book an appointment. What can I assist you with? Are you looking for a haircut, facial, or something else?\",\n    \"conversation_id\": \"12345\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://127.0.0.1:8000/chat",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"conversation_id\": \"12345\",\r\n  \"messages\": [\r\n    {\"role\": \"user\", \"content\": \"Can you please tell me about your services?\"}\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/chat",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"chat"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:8000/chat",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"conversation_id\": \"12345\",\r\n  \"messages\": [\r\n    {\"role\": \"user\", \"content\": \"Can you please tell me about your services?\"}\r\n  ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/chat",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"chat"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Thu, 20 Feb 2025 03:22:55 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "1431"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"response\": \"We offer a range of services to help you look and feel your best. Here's an overview:\\n\\n**Haircut Services:**\\n\\n* Men's Grooming: Get a fresh cut, shave, and style with our expert barbers.\\n* Women's Haircuts: Choose from various styles, including trims, colors, and texture treatments.\\n* Kids' Cuts: We have special services for children, including junior haircuts and styling.\\n\\n**Facial Services:**\\n\\n* Customized Facials: Our skilled aestheticians will help you choose the perfect facial to address your skin concerns, such as acne, aging, or hyperpigmentation.\\n* Advanced Skin Treatments: Enjoy treatments like chemical peels, microdermabrasion, and collagen masks for a radiant glow.\\n\\n**Add-ons and Packages:**\\n\\n* Hair Color Services: From touch-ups to full-color transformations, our experts will help you achieve the look you want.\\n* Makeup Applications: Enhance your natural beauty with our makeup services, including special occasion looks and everyday grooming.\\n* Massage Therapy: Relax and unwind with our expert massage therapists.\\n\\n**Amenities:**\\n\\n* Complimentary beverages and Wi-Fi\\n* Comfortable seating areas for relaxation\\n* Clean, well-maintained facilities\\n\\n**Hours of Operation:**\\n\\nWe're open from 10 AM to 8 PM, Monday through Saturday. Sunday hours are by appointment only.\\n\\nNow that you know about our services, what can I book for you today?\",\n    \"conversation_id\": \"12345\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://127.0.0.1:8000/chat",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"conversation_id\": \"12345\",\r\n  \"messages\": [{\"role\": \"user\", \"content\": \"what's your timing??!\"}]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/chat",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"chat"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:8000/chat",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"conversation_id\": \"12345\",\r\n  \"messages\": [{\"role\": \"user\", \"content\": \"what's your timing??!\"}]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/chat",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"chat"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Thu, 20 Feb 2025 03:50:25 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "379"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"response\": \"We're open from 10 AM to 8 PM, seven days a week. We'd be happy to schedule an appointment with you.\\n\\nFor haircuts: Monday to Saturday - 10 AM to 7 PM\\nSunday - 11 AM to 6 PM\\n\\nFor facials: Tuesday and Thursday - 2 PM to 7 PM (booked slots only)\\nWednesday and Friday - 10 AM to 8 PM\\nMonday, Saturday, and Sunday - by appointment only\",\n    \"conversation_id\": \"12345\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://127.0.0.1:8000/chat",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"conversation_id\": \"12345\",\r\n  \"messages\": [{\"role\": \"user\", \"content\": \"Hello, can I book an appointment?\"}],\r\n  \"language\": \"en\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/chat",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"chat"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:8000/chat",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"conversation_id\": \"12345\",\r\n  \"messages\": [{\"role\": \"user\", \"content\": \"Hello, can I book an appointment?\"}],\r\n  \"language\": \"en\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/chat",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"chat"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Thu, 20 Feb 2025 05:01:26 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "352"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"response\": \"Welcome to our saloon! We'd be delighted to help you with that.\\n\\nWhat type of service would you like to book? Would you prefer a haircut, facial, or something else? \\n\\nAlso, please let me know what time slot you're interested in. Our hours are from 10 AM to 8 PM, and we have availability throughout the day.\",\n    \"conversation_id\": \"12345\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://127.0.0.1:8000/chat",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"conversation_id\": \"2\",\r\n  \"messages\": [{\"role\": \"user\", \"content\": \"what was my question?\"}],\r\n  \"language\": \"en\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/chat",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"chat"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:8000/chat",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"conversation_id\": \"2\",\r\n  \"messages\": [{\"role\": \"user\", \"content\": \"where is your shop?\"}],\r\n  \"language\": \"en\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/chat",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"chat"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Thu, 20 Feb 2025 05:25:10 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "332"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"response\": \"Our salon is located in the heart of downtown, right on Main Street. It's easily accessible by car or public transportation. We're just a block away from the city square and within walking distance from several parking spots.\\n\\nWould you like to schedule an appointment for a haircut or facial?\",\n    \"conversation_id\": \"2\"\n}"
+				}
+			]
+		},
+		{
+			"name": "prompt in urdu",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"conversation_id\": \"test123\",\r\n    \"messages\": [\r\n        {\r\n            \"role\": \"user\",\r\n            \"content\": \"میں صبح 9 بجے ہیئر کٹ کے لیے اپوائنٹمنٹ لینا چاہتا ہوں۔\"\r\n        }\r\n    ],\r\n    \"language\": \"ur\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/chat",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"chat"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:8000/chat",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"conversation_id\": \"test123\",\r\n    \"messages\": [\r\n        {\r\n            \"role\": \"user\",\r\n            \"content\": \"میں صبح 9 بجے ہیئر کٹ کے لیے اپوائنٹمنٹ لینا چاہتا ہوں۔\"\r\n        }\r\n    ],\r\n    \"language\": \"ur\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/chat",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"chat"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Thu, 20 Feb 2025 08:13:55 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "495"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"response\": \"صبح 9 بجے آپ Haircut کے لیے آپشنل تھیمس موجود ہیں۔ میں آپ کی صبح کے ساتھ بہتر اور منظم آپشنز پیش کر sakta hoon.\\n\\nآپ کی موٹو کا اختيار کریں:\\n\\n*   9:30 AM - 10:15 AM\\n*   11:15 AM - 12:00 PM\\n*   1:30 PM - 2:15 PM\\n\\nاپنے پہلے آپشن کو چुन کے ساتھ، یہ رکھیں: <br>\\n\\n\\\"میں صبح 9 بجے آپشن لینا چاہتا ہوں\\\"\",\n    \"conversation_id\": \"test123\"\n}"
+				}
+			]
+		},
+		{
+			"name": "prompt in French language",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"conversation_id\": \"1900-23\",\r\n    \"messages\": [\r\n        {\r\n            \"role\": \"user\",\r\n            \"content\": \"Je voudrais prendre un rendez-vous pour une coupe de cheveux à 9h du matin.\"\r\n        }\r\n    ],\r\n    \"language\": \"fr\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/chat",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"chat"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "prompt in French language",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"conversation_id\": \"1900-23\",\r\n    \"messages\": [\r\n        {\r\n            \"role\": \"user\",\r\n            \"content\": \"Je voudrais prendre un rendez-vous pour une coupe de cheveux à 9h du matin.\"\r\n        }\r\n    ],\r\n    \"language\": \"fr\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/chat",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"chat"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Thu, 20 Feb 2025 08:16:26 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "652"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"response\": \"Bonjour ! Je serais ravi de vous aider à réserver un rendez-vous pour votre coupe de cheveux ce matin.\\n\\nAvant de commencer, je veux confirmer les détails suivants :\\n\\n* Date : Ce matin\\n* Heure : 9h du matin\\n* Service : Coupe de cheveux\\n\\nJe vous informe que notre saloon est très demandé aujourd'hui, mais je vais essayer de trouver une créneau pour vous.\\n\\nIl y a actuellement deux options disponibles :\\n\\n1. **Styliste : Marie**, qui sera prête à vous accueillir à 8h45 du matin.\\n2. **Styliste : Léa**, qui est disponible à 9h10 du matin.\\n\\nPouvez-vous me choisir l'une de ces options ?\",\n    \"conversation_id\": \"1900-23\"\n}"
+				}
+			]
+		},
+		{
+			"name": "prompt in Spanish",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"conversation_id\": \"1-23\",\r\n    \"messages\": [\r\n        {\r\n            \"role\": \"user\",\r\n            \"content\": \"Quisiera reservar una cita para un corte de cabello a las 9 AM.\"\r\n        }\r\n    ],\r\n    \"language\": \"es\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/chat",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"chat"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "prompt in Spanish",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"conversation_id\": \"1-23\",\r\n    \"messages\": [\r\n        {\r\n            \"role\": \"user\",\r\n            \"content\": \"Quisiera reservar una cita para un corte de cabello a las 9 AM.\"\r\n        }\r\n    ],\r\n    \"language\": \"es\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/chat",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"chat"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Thu, 20 Feb 2025 08:19:50 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "796"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"response\": \"¡Claro que sí! Me alegra ayudarte a reservar una cita.\\n\\nSin embargo, me gustaría informarte que nuestro horario de apertura es de las 10:00 AM y nuestros estilosistas ya están ocupados hasta el mediodía. Sin embargo, puedo ofrecerte algunas opciones para ajustar tu cita:\\n\\n*   Si prefieres un corte de cabello a la mañana, puedo ofrecerte la opción de reservarte para las 11:30 AM o las 1:00 PM.\\n*   También puedo ofrecerte una cita para más tarde en el día. ¿Te gustaría considerar las 2:00 PM o las 4:00 PM?\\n\\nAdemás, me gustaría informarte que nuestro estylist favorito para cortes de cabello, Juan Carlos, está disponible a las 11:30 AM y tiene un horario de espera de aproximadamente 15 minutos. ¿Te gustaría reservarte con él?\",\n    \"conversation_id\": \"1-23\"\n}"
+				}
+			]
+		}
+	]
+}

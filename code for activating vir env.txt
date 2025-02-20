@@ -1,0 +1,24 @@
+1. ACTIVATING VIRTUAL ENV:
+
+venv\Scripts\activate
+
+
+
+2. Run the FastAPI Application
+
+uvicorn app:app --reload 🚨
+ 	(or)
+uvicorn api:app --reload
+	(or)
+uvicorn api:app --port 8000 --reload
+
+
+
+3. request body
+
+{
+    "conversation_id": "12345",
+    "messages": [
+        {"role": "user", "content": "Hola, ¿cómo estás?"}
+    ]
+}
