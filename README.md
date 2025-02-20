@@ -58,9 +58,10 @@ This will launch the chat interface in your browser.
 ```
 📁 project_directory
 │── 📄 app.py          # FastAPI backend for processing chat requests
-│── 📄 chat.py         # Streamlit frontend for user interaction
+│── 📄 app.py         # Streamlit frontend for user interaction
 │── 📄 requirements.txt # Python dependencies
 │── 📄 test_api.py     # Unit tests for FastAPI endpoints
+|__ 📄 test_multilingual.py # used for to test the multilanguage capabilities
 └── 📄 README.md       # Project documentation
 ```
 
@@ -73,6 +74,7 @@ This will launch the chat interface in your browser.
 Run unit tests for the FastAPI backend using:
 ```bash
 pytest test_api.py
+pytest test_multilingual.py
 ```
 
 ## Design Decisions
@@ -86,9 +88,5 @@ pytest test_api.py
 - Implement advanced session management for multi-user support.
 - Improve error handling and logging for better debugging.
 
-## License
-This project is licensed under the MIT License.
 
----
-Feel free to contribute or suggest improvements! 🚀
 
