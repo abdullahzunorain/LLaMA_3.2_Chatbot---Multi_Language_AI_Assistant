@@ -28,8 +28,7 @@ cd LLaMA_3.2_Chatbot---Multi_Language_AI_Assistant
 ### Step 2: Create a Virtual Environment (Optional but Recommended)
 ```bash
 python -m venv venv
-*for window user*
-venv\Scripts\activate (to activate the env)
+venv\Scripts\activate  # (to activate the env)
 ```
 
 ### Step 3: Install Dependencies
