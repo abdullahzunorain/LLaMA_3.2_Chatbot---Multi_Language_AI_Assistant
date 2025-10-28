@@ -61,7 +61,7 @@ This will launch the chat interface in your browser.
 ## Project Structure
 ```
 📁 project_directory
-│── 📄 app.py          # FastAPI backend for processing chat requests
+│── 📄 api.py          # FastAPI backend for processing chat requests
 │── 📄 app.py         # Streamlit frontend for user interaction
 │── 📄 requirements.txt # Python dependencies
 │── 📄 test_api.py     # Unit tests for FastAPI endpoints
